@@ -7,7 +7,7 @@ def load_library(path)
   new = {"get_meaning" => {}, "get_emoticon" => {}}
   hash.each do |meaning, emo|
     new["get_meaning"][emo[1]] = meaning
-    new["get_emoticon"][meaning] = emo[]
+    new["get_emoticon"][emo[0]] = emo[1]
   end
   return new
 end

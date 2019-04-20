@@ -25,9 +25,9 @@ end
 def get_english_meaning(path, emo)
   # code goes here
   hash = load_library(path)
-    if hash["get_emoticon"][emo] == nil
+  if hash["get_meaning"][emo] == nil
     return "Sorry, that emoticon was not found"
   else
-    return hash["get_emoticon"][emo]
+    return hash["get_meaning"][emo]
   end
 end

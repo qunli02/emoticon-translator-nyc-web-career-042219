@@ -15,9 +15,10 @@ end
 def get_japanese_emoticon(path, emo)
   # code goes here
   hash = load_library(path)
-  hash["get_emoticon"][emo]
   if hash["get_emoticon"][emo] == nil
     puts "Sorry, that emoticon was not found"
+  else
+    return hash["get_emoticon"][emo]
   end
 end
 
